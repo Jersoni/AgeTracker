@@ -48,6 +48,7 @@ main {
 
 .time-elapsed-header {
     width: 100%;
+    color: rgb(141, 141, 141);
 }
 
 .time-elapsed-subheader {
@@ -89,17 +90,28 @@ main {
     background-color: rgb(34, 36, 41);
 }
 
+.input-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5.2px;
+    height: 5px;
+    background-color: rgb(26, 26, 26);
+}
+
 .bday-date-input-container,
 .bday-time-input-container {
     background-color: transparent;
     border: 1px solid rgb(113, 113, 113);
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
-    height: 70px;
+    height: 50px;
 }
 
 .bday-date-input-container {
     min-width: 140px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-right: 10px;
@@ -118,25 +130,33 @@ main {
 
 .bday-date-input-container label,
 .bday-time-input-container label {
-    margin-bottom: 5px;
+    margin-bottom: 1.5px;
     font-size: 13px;
+    color: rgb(141, 141, 141);
 }
 
 .bday-date-input-container input,
 .bday-time-input-container input {
-    min-height: 30px;
+    min-height: 20px;
     border: none;
     background-color: transparent;
+    font-size: 14px;
+}
+
+.bday-time-input-container label span {
+    color: rgb(113, 113, 113);
 }
 
 .submit-button {
     min-height: 50px;
     width: 100%;
-    border: none;
+    max-width: 60px;
+    min-width: 50px;
+    border: 1px solid rgb(113, 113, 113);
     border-radius: 15px;
-    background-color: rgb(49, 52, 60);
+    background-color: rgb(45, 48, 55);
 }
 
 .arrow {
-    height: 20px;
+    height: 15px;
 }
