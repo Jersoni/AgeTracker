@@ -11,11 +11,26 @@ body {
 }
 
 .age-tracker-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 15px;
     margin-bottom: 30px;
     font-size: 20px;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    background-color: rgb(34, 36, 41);
+}
+
+.age-tracker-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 5px;
+    background-color: rgb(26, 26, 26);
 }
 
 main {
@@ -27,8 +42,8 @@ main {
 .output-container {
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    padding-top: 10px;
+    padding: 90px 30px 170px 30px;  
+    overflow: auto;
 }
 
 .time-elapsed-header {
@@ -65,12 +80,13 @@ main {
 .input-container {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 20px 10px;
     border-top: 1px solid rgb(113, 113, 113);
+    background-color: rgb(34, 36, 41);
 }
 
 .bday-date-input-container,
