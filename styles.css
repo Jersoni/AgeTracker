@@ -1,0 +1,87 @@
+* {
+    font-family: 'Calibri', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.time-elapsed-header {
+    font-size: 20px;
+    width: 100%;
+}
+
+.time-elapsed-subheader {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.input-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid;
+}
+
+.age-tracker-header {
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+.bday-date-input-container,
+.bday-time-input-container {
+    background-color: rgb(238, 238, 238);
+    border-bottom: 2px solid purple;
+    padding: 10px;
+}
+
+.bday-date-input-container {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.bday-time-input-container {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.bday-date-input-container label,
+.bday-time-input-container label {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: rgb(93, 0, 93);
+}
+
+.bday-date-input-container input,
+.bday-time-input-container input {
+    min-height: 20px;
+    border: none;
+    padding-left: 5px;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.submit-button {
+    min-height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(225, 225, 225);
+    font-size: 18px;
+}
