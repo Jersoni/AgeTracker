@@ -1,0 +1,126 @@
+* {
+    font-family: 'Calibri', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(193, 193, 193);
+}
+
+body {
+    background-color: rgb(34, 36, 41);
+}
+
+.age-tracker-header {
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.time-elapsed-header {
+    width: 100%;
+}
+
+.time-elapsed-subheader {
+    margin-bottom: 30px;
+}
+
+
+
+
+.output-container div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.output-container div span:first-child {
+    color: rgb(141, 141, 141);
+    font-size: 15px;
+}
+
+
+
+
+
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 10px;
+    border-top: 1px solid rgb(113, 113, 113);
+}
+
+.bday-date-input-container,
+.bday-time-input-container {
+    background-color: transparent;
+    border: 1px solid rgb(113, 113, 113);
+    padding: 10px;
+    border-radius: 10px;
+    height: 70px;
+}
+
+.bday-date-input-container {
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.bday-time-input-container {
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.optional {
+    font-size: 10px;
+}
+
+.bday-date-input-container label,
+.bday-time-input-container label {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.bday-date-input-container input,
+.bday-time-input-container input {
+    min-height: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.submit-button {
+    min-height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(49, 52, 60);
+}
+
+.arrow {
+    height: 20px;
+}
