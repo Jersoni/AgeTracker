@@ -155,7 +155,3 @@ main {
 .arrow {
     height: 15px;
 }
-
-.submit-button:active {
-    background-color: rgb(34, 36, 41);
-}
