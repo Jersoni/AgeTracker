@@ -168,12 +168,8 @@
             }
 
             console.log(hour)
-            
-            if (hour > 12){
-                timePeriod = 'PM'
-            } else {
-                timePeriod = 'AM'
-            }
+
+            timePeriod = hour >= 12 ? 'PM' : 'AM'
 
             convertedHour = Number(convertedHour)
 
