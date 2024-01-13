@@ -63,26 +63,33 @@
 
         <div class="input-container">
 
-            <div class="bday-date-input-container">
-                <label for="bday-date-input">Enter your Birthdate</label>
-                <input type="date" id="bday-date-input" class="bday-date-input">
-            </div>
+            <div class="inner-input-container">
+                <div class="bday-date-input-container">
+                    <label for="bday-date-input">Enter your Birthdate</label>
+                    <input type="date" id="bday-date-input" class="bday-date-input">
+                </div>
+
+                    
+                <div class="bday-time-input-container">
+                    <label for="bday-time-input">Time of birth <span class="optional">(optional)</span></label>
+                    <input type="time" id="bday-time-input" class="bday-time-input">
+                </div>
 
                 
-            <div class="bday-time-input-container">
-                <label for="bday-time-input">Time of birth <span class="optional">(optional)</span></label>
-                <input type="time" id="bday-time-input" class="bday-time-input">
+                <button type="submit" class="submit-button">
+                    <img src="arrow-up.svg" class="arrow">
+                </button>
             </div>
 
-            
-            <button type="submit" class="submit-button">
-                <img src="arrow-up.svg" class="arrow">
-            </button>
         </div>
 
     </main>
 
     <script>
+
+        // comment
+
+        // this is a new comment for the new branch
 
         let buttonSubmit = document.querySelector('.submit-button')
         let inputDate

@@ -42,8 +42,11 @@ main {
 .output-container {
     display: flex;
     flex-direction: column;
-    padding: 90px 30px 170px 30px;  
+    padding: 90px 15px 170px 15px;  
     overflow: auto;
+    max-width: 540px;
+    width: 100%;
+    align-self: center;
 }
 
 .time-elapsed-header {
@@ -54,9 +57,6 @@ main {
 .time-elapsed-subheader {
     margin-bottom: 30px;
 }
-
-
-
 
 .output-container div {
     display: flex;
@@ -74,15 +74,20 @@ main {
 }
 
 .input-container {
-    display: flex;
-    flex-direction: row;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px 10px;
     border-top: 1px solid rgb(113, 113, 113);
     background-color: rgb(34, 36, 41);
+}
+
+.inner-input-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 15px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .input-container::before {
