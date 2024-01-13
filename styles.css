@@ -44,7 +44,7 @@ main {
     flex-direction: column;
     padding: 90px 15px 170px 15px;  
     overflow: auto;
-    max-width: 540px;
+    max-width: 500px;
     width: 100%;
     align-self: center;
 }
